@@ -1,0 +1,45 @@
+{
+ "name": "HTML5 Camera",
+ "description": "A PhotoBooth Application For Chrome",
+ "version": "1.0",
+ "manifest_version": 2,
+ "offline_enabled" : true,
+ "app": {
+  "background": {
+    "scripts": [ "background.js" ]
+  }
+ },
+ "icons": {
+   "16": "icon_16.png",
+   "24": "icon_24.png",
+   "32": "icon_32.png",
+   "64": "icon_64.png",
+   "128": "icon_128.png"
+ },
+ "permissions": [
+   "experimental",
+   "unlimitedStorage",
+   "appWindow",
+   "videoCapture",
+   "fileSystem",
+   "notifications",
+   "identity",
+   "https://docs.google.com/feeds/",
+   "https://docs.googleusercontent.com/",
+   "https://spreadsheets.google.com/feeds/",
+   "https://ssl.gstatic.com/",
+   "https://www.googleapis.com/drive/v1/files"
+ ],
+  "sandbox": {
+    "pages": [ "app/index.html" ]
+  },
+  "oauth2": {
+    "client_id": "440408695849.apps.googleusercontent.com",
+    "scopes": [
+      "https://docs.google.com/feeds/",
+      "https://docs.googleusercontent.com/",
+      "https://spreadsheets.google.com/feeds/",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  }
+}
