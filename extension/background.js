@@ -1,4 +1,4 @@
-chrome.experimental.app.onLaunched.addListener(function() { 
+chrome.app.runtime.onLaunched.addListener(function() { 
   
   function onWindowLoaded(win) {
   	console.log(win)

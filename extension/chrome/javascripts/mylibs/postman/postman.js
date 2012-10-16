@@ -22,7 +22,7 @@
         };
         return $.subscribe("/postman/deliver", function(message, address, block) {
           message.address = address;
-          return recipient.webkitPostMessage(message, "*", block);
+          return recipient.postMessage(message, "*", block);
         });
       }
     };

@@ -3661,7 +3661,7 @@ define('text!mylibs/preview/views/selectPreview.html',[],function () { return '<
         };
         return $.subscribe("/postman/deliver", function(message, address) {
           message.address = address;
-          return window.top.webkitPostMessage(message, "*");
+          return window.top.postMessage(message, "*");
         });
       }
     };
